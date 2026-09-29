@@ -6,6 +6,8 @@ tmdview already colors many languages, such as Rust, Python, Go and JavaScript.
 This plugin takes only the rest: TypeScript, Kotlin, Swift, SCSS, GraphQL, Dockerfile, Elixir, Haskell, Nix, Protobuf and the other languages in the standard highlight.js build.
 A language neither of them knows stays as plain text.
 
+![sample.md in Vim beside tmdview: Rust colored by tmdview, TypeScript, Kotlin and Dockerfile colored by this plugin](screenshot.png)
+
 ## Install
 
 ```sh
