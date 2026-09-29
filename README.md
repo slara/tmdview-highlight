@@ -14,7 +14,7 @@ A language neither of them knows stays as plain text.
 tmdview plugins install slara/tmdview-highlight
 ```
 
-It's used on every page with a matching code block, in the page's light or dark theme.
+tmdview then uses it on every page with a matching code block, in the page's light or dark theme.
 Try it on `sample.md` in this repo.
 
 ## Files
