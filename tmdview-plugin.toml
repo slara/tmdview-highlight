@@ -1,17 +1,27 @@
 name = "highlight"
-version = "0.2.0"
-description = "Colors code in languages tmdview doesn't know, with highlight.js 11.12.0"
+version = "0.3.0"
+description = "Colors code with highlight.js 11.12.0, in a choice of themes"
 
-# Take every fenced block tmdview can't color itself (TypeScript, Kotlin, Swift, Dockerfile, ...).
+# Take every fenced block with a language that no other plugin claims.
 fallback = true
 
 styles = ["styles.css"]
 scripts = [
   "vendor/highlight.min.js",
+  "vendor/languages/clojure.min.js",
   "vendor/languages/dockerfile.min.js",
   "vendor/languages/elixir.min.js",
+  "vendor/languages/erlang.min.js",
+  "vendor/languages/fsharp.min.js",
+  "vendor/languages/groovy.min.js",
   "vendor/languages/haskell.min.js",
+  "vendor/languages/julia.min.js",
+  "vendor/languages/latex.min.js",
+  "vendor/languages/nginx.min.js",
   "vendor/languages/nix.min.js",
+  "vendor/languages/ocaml.min.js",
+  "vendor/languages/powershell.min.js",
   "vendor/languages/protobuf.min.js",
+  "vendor/languages/scala.min.js",
   "init.js",
 ]
