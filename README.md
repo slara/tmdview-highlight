@@ -14,7 +14,8 @@ A language neither of them knows stays as plain text.
 tmdview plugins install slara/tmdview-highlight
 ```
 
-tmdview then uses it on every page with a matching code block, in the page's light or dark theme.
+tmdview then uses it on every page with a matching code block, in tmdview's code colors: GitHub's, in the page's light or dark theme, or yours from `[colors]` in `~/.config/tmdview/config.toml`.
+It needs a tmdview with those colors, newer than 0.5.0.
 Try it on `sample.md` in this repo.
 
 ## Files
@@ -23,9 +24,9 @@ Try it on `sample.md` in this repo.
 |---|---|
 | `tmdview-plugin.toml` | The manifest tmdview reads |
 | `init.js` | Colors the blocks tmdview hands to the plugin |
-| `styles.css` | GitHub light and dark colors, scoped to tmdview's themes. Generated |
+| `styles.css` | Maps highlight.js's classes to tmdview's code colors |
 | `vendor/` | highlight.js and extra languages. Generated |
-| `scripts/vendor.py` | Downloads `vendor/` and builds `styles.css` for a pinned version |
+| `scripts/vendor.py` | Downloads `vendor/` for a pinned version |
 
 To change the highlight.js version or add a language, edit `VERSION` or `LANGUAGES` in `scripts/vendor.py`, run `python3 scripts/vendor.py`, and copy the `scripts` list it prints into the manifest.
 
